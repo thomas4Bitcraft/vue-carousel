@@ -41,7 +41,7 @@ export default {
       const children = $children
         .filter(
           child =>
-            child.$el && child.$el.className.indexOf("VueCarousel-slide") >= 0
+            child.$el && child.$el.className && child.$el.className.indexOf("VueCarousel-slide") >= 0
         )
         .map(child => child._uid);
 
